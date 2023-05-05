@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Video player | Fairy tail</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="video">
+        <iframe class="video__iframe" src="" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        <div class="video__title"></div>
+      </div>
+      <div class="sidebar">
+        <input type="text" class="sidebar__input-search" placeholder="Tìm kiếm tập phim..." />
+        <div class="sidebar__menu">
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/792842078886">
+            Tập 1 - Yêu tinh cừu vĩ
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/792841816742">
+            Tập 2 - Rồng lửa, Khỉ và Bò
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/792842209958">
+            Tập 3 - Thâm nhập vào dinh thự Everlue
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/792841685670">
+            Tập 4 - Gửi Kaby thân yêu!
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/792841947814">
+            Tập 5 - Giáp ma đạo sĩ
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/792842144422">
+            Tập 6 - Yêu tinh trong gió
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/792841751206">
+            Tập 7 - Lửa và gió
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/792842013350">
+            Tập 8 - Đội mạnh nhất
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/792842275494">
+            Tập 9 - Natsu và ngôi làng kì lạ
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/792841882278">
+            Tập 10 - Natsu đấu với Erza
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/793900223142">
+            Tập 11 - Câu chuyện hòn đảo bị nguyền rủa
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/793900026534">
+            Tập 12 - Giọt trăng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/793900550822">
+            Tập 13 - Natsu đấu với Yuka sóng âm
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/793900354214">
+            Tập 14 - Làm những việc cần phải làm
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/793900747430">
+            Tập 15 - Ma thuật vĩnh cửu
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/793900157606">
+            Tập 16 - Đảo Galuna! Trận chiến quyết định
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/793900681894">Tập 17 - Burst</button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/793900419750">
+            Tập 18 - Bay cao! Chạm tới bầu trời
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/793900288678">
+            Tập 19 - Thiếc nhẫn hoán đổi
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/793900092070">
+            Tập 20 - Natsu và quả trứng rồng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/796319025830">
+            Tập 21 - Người điều khiển hội Phantom
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/796319353510">
+            Tập 22 - Lucy Heartfilia
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/796319484582">
+            Tập 23 - 15 phút
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/796318894758">
+            Tập 24 - Để không ai nhìn thấy giọt nước mắt ấy
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/796319419046">
+            Tập 25 - Bông hoa kì lạ nở dưới trời mưa
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/796319222438">
+            Tập 26 - Đôi cánh lửa
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/796319287974">
+            Tập 27 - Hai chiến binh rồng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/796319156902">
+            Tập 28 - Luật Fairy
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/796319091366">
+            Tập 29 - Quyết định của tôi
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/796318960294">
+            Tập 30 - Thế hệ tiếp theo
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643138849385">
+            Tập 31 - Ngôi sao không thể trở về bầu trời
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142912617">
+            Tập 32 - Vương tinh linh
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142453865">
+            Tập 33 - Ngọn tháp thiên đường
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139308137">
+            Tập 34 - Jellal
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141274217">
+            Tập 35 - Âm thanh trong đêm
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141864041">
+            Tập 36 - Trò chơi thiên đường
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643138718313">
+            Tập 37 - Bộ giáp cho trái tim
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140291177">
+            Tập 38 - Vận mệnh
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142322793">
+            Tập 39 - Lời cầu nguyện với ánh sáng thần thánh
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139701353">
+            Tập 40 - Titania gục ngã
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140946537">
+            Tập 41 - Về nhà
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139177065">
+            Tập 42 - Trận đấu của Fairy Tail
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140553321">
+            Tập 43 - Đánh bại đồng đội để cứu đồng đội
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142978153">
+            Tập 44 - Lôi Thần Điện
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142847081">
+            Tập 45 - Dòng dõi Satan
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141995113">
+            Tập 46 - Đột kích tại Thánh đường Kardia
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643143043689">
+            Tập 47 - Bộ ba diệt rồng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643138652777">
+            Tập 48 - Fantasia
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140487785">
+            Tập 49 - Ngày của cuộc gặp gỡ định mệnh
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141798505">
+            Tập 50 - Nhiệm vụ đặc biệt cẩn thận với những người mà bạn thích
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142257257">
+            Tập 51 - Tình yêu và Lucky
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575122537">
+            Tập 52 - Liên minh Forest tập trung lại nào
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140422249">
+            Tập 53 - Oracion Seis xuất hiện
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141470825">
+            Tập 54 - Thiên không vu nữ Wendy
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141667433">
+            Tập 55 - Cô gái và bóng ma
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140029033">
+            Tập 56 - Đường đua tử thần
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139504745">
+            Tập 57 - Bóng tối
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139439209">
+            Tập 58 - Tinh linh hợp chiến
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142519401">
+            Tập 59 - Hồi ức của Jellal
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140094569">
+            Tập 60 - Ranh giới của sự hủy diệt
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139111529">
+            Tập 61 - Natsu đấu với Cobra
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139635817">
+            Tập 62 - Jura vị thánh thứ 10
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140160105">
+            Tập 63 - Những lời em nói
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142060649">Tập 64 - Zero</button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140225641">
+            Tập 65 - Từ thiên mã tới chu tiên
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643138783849">
+            Tập 66 - Sức mạnh tư tưởng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/1878020721318">
+            Tập 67 - Đã có em ở đây
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140815465">
+            Tập 68 - Có một hội tồn tại vì một người
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139373673">
+            Tập 69 - Tiếng gọi của rồng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140881001">
+            Tập 70 - Natsu đấu với Gray
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141077609">
+            Tập 71 - Tình bạn vượt qua cái chết
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141732969">
+            Tập 72 - Ma đạo sĩ của Fairy Tail
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140618857">
+            Tập 73 - Hoa anh đào cầu vồng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643143109225">
+            Tập 74 - Nhiệm vụ quan trọng đầu tiên
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142388329">
+            Tập 75 - Cuộc đua 24 giờ sự kiên trì tuyệt
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142650473">
+            Tập 76 - Gildarts
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142584937">
+            Tập 77 - Trái đất
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643826977385">
+            Tập 78 - Edolas
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141536361">
+            Tập 79 - Thợ săn Fairy
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141012073">
+            Tập 80 - Chìa khóa của hy vọng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139832425">
+            Tập 81 - Cầu lửa
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141012073">
+            Tập 82 - Mừng các vị đã trở về
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141601897">
+            Tập 83 - Extalia
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142060649">
+            Tập 84 - Bay lên cùng với bạn bè
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141929577">
+            Tập 85 - Mã ETD
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142191721">
+            Tập 86 - Erza đấu với Erza
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140684393">
+            Tập 87 - Tất cả đều là sinh mạng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141208681">
+            Tập 88 - Dòng sông ngân hà chảy bằng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139570281">
+            Tập 89 - Cái kết của long tỏa pháo
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139963497">
+            Tập 90 - Cậu Bé Ngày Xưa Ấy
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140356713">
+            Tập 91 - Giác Quan Của Rồng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643138914921">
+            Tập 92 - Những Người Đang Sống
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643142716009">
+            Tập 93 - Ta Đang Đứng Ở Đây Nè
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141339753">
+            Tập 94 - Tạm biệt Edolas
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141143145">
+            Tập 95 - Lisanna
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643140749929">
+            Tập 96 - Người xóa bỏ sinh mệnh
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139766889">
+            Tập 97 - Đồng đội tốt
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643141405289">
+            Tập 98 - Ai là người may mắn
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139242601">
+            Tập 99 - Natsu đấu với Gildarts
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643139045993">Tập 100 - Mest</button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577809513">
+            Tập 101 - Hắc ma đạo sĩ
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/4187698629258">
+            Tập 102 - Linh hồn sắt
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/4187698694794">
+            Tập 103 - Đòn tấn công của Makarov
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576892009">
+            Tập 104 - Ma pháp di thất
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643578268265">
+            Tập 105 - Hỏa long đấu với hỏa thần
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577350761">
+            Tập 106 - Thế giới của ma thuật vĩ đại
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575450217">
+            Tập 107 - Hồi quang phản chiếu
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/1878018820774">
+            Tập 108 - Cánh cổng nhân loại
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576826473">
+            Tập 109 - Lucy bùng cháy
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643578137193">
+            Tập 110 - Sự tuyệt vọng tột cùng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575974505">
+            Tập 111 - Giọt nước mắt tình yêu và sự sống
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577154153">
+            Tập 112 - Một điều đã không thể nói ra
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577088617">
+            Tập 113 - Thiên lang thụ
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577940585">
+            Tập 114 - Erza đấu với Azuma
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575515753">
+            Tập 115 - Ý chí đóng băng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575646825">
+            Tập 116 - Sức mạnh của sự sống
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577547369">
+            Tập 117 - Tiếng sét
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/4187698498186">
+            Tập 118 - Người không mang hội ấn
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/4187698563722">
+            Tập 119 - Lĩnh vực uyên thâm
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576695401">
+            Tập 120 - Bình minh trên thiên lang đảo
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576367721">
+            Tập 121 - Tư cách yêu thương
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576760937">
+            Tập 122 - Nắm chặt tay nhau
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577481833">
+            Tập 123 - Fairy Tail năm X791
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577612905">
+            Tập 124 - Bảy năm trống vắng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575319145">
+            Tập 125 - Khiêu vũ ma pháp
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577416297">
+            Tập 126 - Băng nhóm lắc mông xấu xa thứ thiệt
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576629865">
+            Tập 127 - Nổi kinh hoàng của Lucy vô hình
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576171113">
+            Tập 128 - Kỷ vật của cha
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576957545">
+            Tập 129 - Long tranh hổ đấu Laxus đấu với Natsu
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577285225">
+            Tập 130 - Mục tiêu là Lucy
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575777897">
+            Tập 131 - Cơn thịnh nộ của Legion
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/1878018886310">
+            Tập 132 - Chìa khóa của bầu trời sao
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576236649">
+            Tập 133 - Những người bạn đồng hành
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575122537">
+            Tập 134 - Mê cung cùng tưởng khúc
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575188073">
+            Tập 135 - Dấu chân thần thoại
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643578071657">
+            Tập 136 - Ác quỷ tái ngộ
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643578202729">
+            Tập 137 - Những điều không tưởng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575712361">
+            Tập 138 - Đích đến của cuộc Thập Tự Chinh
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576040041">
+            Tập 139 - Thời khắc đã điểm
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575581289">
+            Tập 140 - Tân Oracion Seis xuất hiện
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577678441">
+            Tập 141 - Truy lùng Vô hạn thời kế
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575843433">
+            Tập 142 - Trận chiến không cân sức
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577743977">
+            Tập 143 - Anti-Link
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577219689">
+            Tập 144 - Phá tan sự tuyệt vọng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643575384681">
+            Tập 145 - Real Nightmare
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577875049">
+            Tập 146 - Xoắn ốc thời gian
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643577023081">
+            Tập 147 - Lâu đài vô hạn
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576564329">
+            Tập 148 - Nước mắt Thiên thần
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643578006121">
+            Tập 149 - Tôi đã nghe thấy giọng nói của bạn bè
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643576105577">
+            Tập 150 - Lucy và Michelle
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605531241">
+            Tập 151 - Sabertooth
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604613737">
+            Tập 152 - Hướng đến vị trí số 1
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607366249">
+            Tập 153 - Vũ khúc Ngân Hà
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603434089">
+            Tập 154 - Chỉ đủ thời gian để lướt qua
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607038569">
+            Tập 155 - Thành phố nở hoa Crocus
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605138025">
+            Tập 156 - Sky Labyrinth
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603630697">
+            Tập 157 - Bang hội mới
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605596777">
+            Tập 158 - Đêm sao rơi
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604023913">
+            Tập 159 - Lucy đấu với Flare
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603565161">
+            Tập 160 - Điềm xấu
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603761769">
+            Tập 161 - Chiến xa
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606186601">
+            Tập 162 - Elfman đấu với Bacchus
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605989993">
+            Tập 163 - Mirajēn vs. Jenī
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607628393">
+            Tập 164 - Yukino đấu với Kagura
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643744008809">
+            Tập 165 - Nổi oán thù cuốn sau chiếc rèm bóng đêm
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607693929">
+            Tập 166 - Phục ma điện
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604810345">
+            Tập 167 - 1 chọi 100
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604286057">
+            Tập 168 - Laxus đấu với Alexei
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605203561">
+            Tập 169 - Wendy đấu với Cheria
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607104105">
+            Tập 170 - Nắm đấm bé nhỏ
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605727849">
+            Tập 171 - Trận hải chiến
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605793385">
+            Tập 172 - Mùi hương tôi giành riêng cho cậu
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606317673">
+            Tập 173 - Trận chiến của các sát long ma đạo sĩ
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605269097">
+            Tập 174 - Tứ long hội tụ
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606514281">
+            Tập 175 - Natsu đấu với song long
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606121065">
+            Tập 176 - Long Vương
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606383209">
+            Tập 177 - Kế Hoạch Nhật Thực
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604679273">
+            Tập 178 - Quân Sư Thần Thánh
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606776425">
+            Tập 179 - Gray Đấu Với Rufus
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603237481">
+            Tập 180 - Ngạ Lang Kỵ Sĩ Đoàn
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605662313">
+            Tập 181 - Fairy Tail Đấu Với Kẻ Thi Hành Án
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607562857">
+            Tập 182 - Đại Địa Bùng Chá
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603303017">
+            Tập 183 - Thế giới Của Chúng Ta
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605924457">
+            Tập 184 - Vương Quốc Cho Đến Ngày Mai
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606055529">
+            Tập 185 - Erza Đấu Với Kagura
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606645353">
+            Tập 186 - Tương Lai Tuyệt Vọng Đến Gần
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605400169">
+            Tập 187 - Con Ếch
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603892841">
+            Tập 188 - Lôi Kích
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643743943273">
+            Tập 189 - ngày 5 tháng 7 năm 2014
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606973033">
+            Tập 190 - Người Đóng Cổng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603368553">
+            Tập 191 - Natsu vs. Rōgu
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607169641">
+            Tập 192 - Hãy Sống Cho Phần Tôi
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603499625">
+            Tập 193 - ngày 2 tháng 8 năm 2014
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643744270953">
+            Tập 194 - Ma Pháp Của Zirconis
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606710889">
+            Tập 195 - Nhân Đối Nhân, Long Đối Long, Nhân Đối Long
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604417129">
+            Tập 196 - Tội Lỗi Và Hy Sinh
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643744336489">
+            Tập 197 - Thời Gian Của Sinh Mệnh
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607497321">
+            Tập 198 - Thảo Nguyên Hoàng Kim
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643744074345">
+            Tập 199 - Đại Tiệc Cung Đình
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605858921">
+            Tập 200 - Giọt Thời Gian
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605465705">
+            Tập 201 - Quà Tặng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604548201">
+            Tập 202 - Mừng Cậu Về Nhà Frosch
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604154985">
+            Tập 203 - Moulin Rouge
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606579817">
+            Tập 204 - Có Chết Cũng Phải Tiếp Đãi Tận Tình Nồng Hậu
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605334633">
+            Tập 205 - Hải Đăng Của Cuộc Nổi Loạn
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605072489">
+            Tập 206 - Nổi Kinh Hoàng Ở Thư Viện
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604941417">
+            Tập 207 - Hisui Nổi Dậy
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607235177">
+            Tập 208 - Astral Spiritus
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604089449">
+            Tập 209 - Wendy Cùng Aquarius, Vui Chơi Tại Công Viên Giải Trí
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607759465">
+            Tập 210 - Bộ Bài Hội Đấu Với Bộ Bài Tinh Linh
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606448745">
+            Tập 211 - Gray Đấu Với Cancer, Trận Chiến Vũ Đạo
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606841961">
+            Tập 212 - Juvia Đấu Với Aries, Tử Chiến Nơi Sa Mạc
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643606907497">
+            Tập 213 - Erza Đấu Với Sagittarius, Quyết Chiến Trên Lưng Ngựa
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603696233">
+            Tập 214 - Natsu Đại Chiến Leo
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643744205417">
+            Tập 215 - Xà Phu Ophiuchus
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607431785">
+            Tập 216 - Đêm Sao Băng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643605006953">
+            Tập 217 - Tinh Linh Thú
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643607300713">
+            Tập 218 - Tin Tưởng
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604220521">
+            Tập 219 - Điều Được Dệt Nên Bởi Lòng Chân Thành
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604875881">
+            Tập 220 - 413 Ngày
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603827305">
+            Tập 221 - Bạch Ngân Mê Cung
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604482665">
+            Tập 222 - Biến Thân
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603958377">
+            Tập 223 - Kemokemo Tới Đây
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604351593">
+            Tập 224 - Kimi no Kita Basho
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643603171945">
+            Tập 225 - Người Đàn Ông Sấm Chớp
+          </button>
+          <button class="sidebar__btn-module" data-video="https://ok.ru/videoembed/643604744809">
+            Tập 226 - Fairy Tail Của Những Xác Chết Di Động
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>
